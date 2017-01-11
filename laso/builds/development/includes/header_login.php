@@ -1,7 +1,10 @@
 <?php
-define("BASE_DIR","/Applications/XAMPP/htdocs/laso/");
-require_once(BASE_DIR."_includes/init.php");
 
+//define("BASE_DIR","/Applications/XAMPP/htdocs/laso/");
+//require_once(BASE_DIR."_includes/init.php");
+//path to work pc_main
+set_include_path('C:\xampp\htdocs\laso\_includes');
+ini_set('include_path','init.php');
 if(isset($_POST["submit"])){
 	$user = $_POST["username"];
 	$password = $_POST["password"];
