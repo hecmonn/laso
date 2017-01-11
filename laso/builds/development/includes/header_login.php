@@ -1,10 +1,8 @@
 <?php
 
-//define("BASE_DIR","/Applications/XAMPP/htdocs/laso/");
-//require_once(BASE_DIR."_includes/init.php");
-//path to work pc_main
 set_include_path('C:\xampp\htdocs\laso\_includes');
 ini_set('include_path','init.php');
+
 if(isset($_POST["submit"])){
 	$user = $_POST["username"];
 	$password = $_POST["password"];
@@ -33,7 +31,7 @@ if(isset($_POST["submit"])){
         <header>
             <div class="top-nav">
                 <div class="left-top-nav">
-                    <a href="liverpool.php"><div class="logo-liverpool">
+                    <a href="liverpool"><div class="logo-liverpool">
                     </div></a>
                 </div>
                 <div class="options-menu">
@@ -42,7 +40,7 @@ if(isset($_POST["submit"])){
                             <li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
                         </span>
                         <span class="lan">
-                            <li><a <?php if(isset($title)) if($title==="Legal") echo "class=\"active-legal\""; ?> href="legal.php">Legal Terms</a></li>
+                            <li><a <?php if(isset($title)) if($title==="Legal") echo "class=\"active-legal\""; ?> href="legal">Legal Terms</a></li>
                         </span>
                     </ul>
                 </div>
@@ -53,12 +51,13 @@ if(isset($_POST["submit"])){
                         <li class="dropdown <?php if(isset($title)) if($title==="About") echo "active-item"; ?>">
                             <a class="ddc-trigger ">About Liverpool
                             <ul class="dropdown-content"><br>
-                                <li><a href="about.php">Profile, Mission and Values</a></li><br><br>
-                                <li><a href="presence.php">Geographical presence</a></li><br><br>
+                                <li><a href="about">Profile, Mission and Values</a></li><br><br>
+                                <li><a href="history">History</a></li><br><br>
+                                <li><a href="presence">Geographical presence</a></li><br><br>
                             </ul></a>
                         </li>
                         <li <?php if(isset($title)) if($title==="Investors") echo "class=\"active-item\""; ?>><a href="investors.php">Investors</a></li>
-                        <li <?php if(isset($title)) if($title==="Laso") echo "class=\"active-item\""; ?>><a href="laso.php">LASO</a></li>
+                        <li <?php if(isset($title)) if($title==="Laso") echo "class=\"active-item\""; ?>><a href="laso">LASO</a></li>
                     </ul>
                 </div>
             </nav>

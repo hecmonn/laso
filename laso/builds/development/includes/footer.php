@@ -39,20 +39,21 @@
             <div class="col-md-2">
                 <h4>About Liverpool</h4>
                 <ul>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="presence.php">Geographical Presence</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="history">History</a></li>
+                    <li><a href="presence">Geographical Presence</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h4>Investors</h4>
                 <ul>
-                    <li><a href="investors.php">Financial information</a></li>
+                    <li><a href="investors">Financial information</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h4>LASO</h4>
                 <ul>
-                    <li><a href="laso.php">Liverpool Asian Sourcing Office</a></li>
+                    <li><a href="laso">Liverpool Asian Sourcing Office</a></li>
                 </ul>
             </div>
             <div class="col-md-4 col-md-offset-2">

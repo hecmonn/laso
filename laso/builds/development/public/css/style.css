@@ -43,9 +43,13 @@ a:hover {
   z-index: 1;
   background-color: rgba(1, 1, 1, 0.9);
   position: absolute;
+  width: 100%;
   display: none;
   font-size: 0.85em;
   box-shadow: 10px 10px 5px rgba(55, 55, 58, 0.3);
+}
+.dropdown .dropdown-content ul {
+  padding: 0;
 }
 .dropdown .dropdown-content li {
   padding: 1em;
@@ -70,6 +74,7 @@ header {
   background-image: url("../../assets/header-banner.jpg");
 }
 header .top-nav {
+  padding: 0;
   padding-top: 1em;
   width: 80%;
   height: 60%;
@@ -266,6 +271,70 @@ header nav.top-nav-menu .main-nav ul li {
   text-decoration: none;
   color: white;
   border: 0;
+}
+
+.history {
+  background-image: url("../../assets/liverpool-store-8.jpg");
+  padding: 5%;
+  height: 60%;
+  font-size: 0.9em;
+}
+@media screen and (max-width: 320px) {
+  .history {
+    height: auto;
+  }
+  .history .history-info {
+    width: 100%;
+  }
+}
+.history .history-holder {
+  width: 65%;
+  background-color: rgba(154, 74, 124, 0.97);
+  padding: 1% 0;
+  margin: -1% 15%;
+  height: auto;
+}
+.history .history-holder .history-content {
+  padding: 0;
+  margin: 0 2%;
+}
+.history .history-holder .history-content .history-header {
+  font-weight: bolder;
+  font-size: 1.3em;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+.history .history-holder .history-content .ages-selector {
+  width: 100%;
+  padding: 0;
+  margin: 1% 0;
+  height: 20%;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.history .history-holder .history-content .ages-selector ul {
+  padding: 0;
+}
+.history .history-holder .history-content .ages-selector ul li {
+  display: inline-block;
+  padding: 0 1em;
+  cursor: pointer;
+}
+.history .history-holder .history-content .ages-selector ul li:hover {
+  border-bottom: 1px solid orange;
+  color: white;
+}
+.history .history-holder .history-content .ages-selector ul li.active-age {
+  border-bottom: 1px solid orange;
+  color: white;
+}
+.history .history-holder .history-content .history-info {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-weight: lighter;
 }
 
 .active-legal {
