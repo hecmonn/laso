@@ -1,0 +1,19 @@
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 71
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  move_uploaded_file(/Applications/XAMPP/htdocs/uploads/6/12313160721.jpg): failed to open stream: No such file or directory in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 81
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  move_uploaded_file(): Unable to move '/var/tmp/phpg3ANqI' to '/Applications/XAMPP/htdocs/uploads/6/12313160721.jpg' in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 81
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 71
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  move_uploaded_file(/Applications/XAMPP/htdocs/uploads/6/mkj2345160721.jpg): failed to open stream: No such file or directory in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 81
+[21-Jul-2016 00:15:21 America/Denver] PHP Warning:  move_uploaded_file(): Unable to move '/var/tmp/php2NBtqq' to '/Applications/XAMPP/htdocs/uploads/6/mkj2345160721.jpg' in /home1/lasovpco/public_html/pis/includes/Photograph.php on line 81
+[21-Jul-2016 00:47:25 America/Denver] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Unsupported image type: /uploads/6/' in /home1/lasovpco/public_html/pis/includes/fpdf/fpdf.php:271
+Stack trace:
+#0 /home1/lasovpco/public_html/pis/includes/fpdf/fpdf.php(884): FPDF->Error('Unsupported ima...')
+#1 /home1/lasovpco/public_html/pis/includes/create_pdf.php(78): FPDF->Image('../../uploads/6...', 20, 99, 20, 20)
+#2 {main}
+  thrown in /home1/lasovpco/public_html/pis/includes/fpdf/fpdf.php on line 271
+[13-Aug-2016 07:57:44 America/Denver] PHP Notice:  Undefined index: po_id in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 4
+[13-Aug-2016 07:57:44 America/Denver] PHP Notice:  Undefined index: id_supp in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 5
+[15-Aug-2016 10:53:19 America/Denver] PHP Notice:  Undefined variable: res_pis in /home1/lasovpco/public_html/pis/includes/create_entry.php on line 51
+[14-Sep-2016 01:56:16 America/Denver] PHP Notice:  Undefined index: po_id in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 4
+[14-Sep-2016 01:56:16 America/Denver] PHP Notice:  Undefined index: id_supp in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 5
+[15-Oct-2016 20:39:43 America/Denver] PHP Notice:  Undefined index: po_id in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 4
+[15-Oct-2016 20:39:43 America/Denver] PHP Notice:  Undefined index: id_supp in /home1/lasovpco/public_html/pis/includes/create_pdf.php on line 5

@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Open Sans", Arial;
+}
+
+li {
+  list-style: none;
+  font-weight: 600;
+  transition: border 0.1s;
+}
+li:hover {
+  color: black;
+  border-bottom: 5px solid #974377;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+  color: #ABABAB;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.active-item {
+  cursor: pointer;
+  color: #ababab;
+  border-bottom: 5px solid #974377;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.dropdown .dropdown-content {
+  margin-top: 0.5em;
+  z-index: 1;
+  background-color: rgba(1, 1, 1, 0.9);
+  position: absolute;
+  display: none;
+  font-size: 0.85em;
+  box-shadow: 10px 10px 5px rgba(55, 55, 58, 0.3);
+}
+.dropdown .dropdown-content li {
+  padding: 1em;
+}
+.dropdown .dropdown-content li:hover {
+  border: 0;
+  color: white;
+}
+.dropdown .dropdown-content li a {
+  font-weight: lighter;
+  color: #ababab;
+}
+.dropdown .dropdown-content li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  min-width: 500px;
+  width: 100%;
+  height: 20%;
+  background-image: url("../../assets/header-banner.jpg");
+}
+header .top-nav {
+  padding-top: 1em;
+  width: 80%;
+  height: 60%;
+  margin: 0 10%;
+}
+header .top-nav .left-top-nav {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: left;
+  min-width: 300px;
+}
+header .top-nav .left-top-nav .logo-liverpool {
+  min-width: 280px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/logo-liverpool.png");
+  background-size: 90% 80%;
+  background-repeat: no-repeat;
+}
+header .top-nav .options-menu {
+  position: relative;
+  float: right;
+  width: 20%;
+}
+header .top-nav .options-menu ul {
+  position: relative;
+  float: right;
+}
+header .top-nav .options-menu ul li {
+  border: 0;
+  display: inline-block;
+  padding: 0 1em;
+}
+header nav.top-nav-menu {
+  clear: both;
+  width: 80%;
+  margin: 1% 10%;
+  margin-bottom: 0;
+  height: 20%;
+  font-size: 1em;
+}
+header nav.top-nav-menu .main-nav ul {
+  padding: 0;
+}
+header nav.top-nav-menu .main-nav ul li {
+  display: inline-block;
+  padding: 0 2em;
+}
+
+.main-content {
+  width: 100%;
+  clear: both;
+  min-width: 800px;
+}
+
+.index {
+  margin: 0;
+}
+.index img {
+  width: 100%;
+  height: 50%;
+}
+
+.about {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/liverpool-store-3.jpg");
+}
+.about .about-holder {
+  height: 95%;
+  width: 95%;
+  margin: 0 2.5%;
+  background-color: rgba(154, 74, 124, 0.9);
+}
+.about .about-holder .about-content {
+  color: white;
+  font-size: 1.1em;
+}
+.about .about-holder .about-content ul li {
+  padding: 0.2em;
+  list-style: circle;
+}
+.about .about-holder .about-content > * {
+  padding: 1em;
+}
+
+.financial {
+  background-image: url("../../assets/liverpool-store-7.jpg");
+}
+.financial .container {
+  color: white;
+  background-color: rgba(154, 74, 124, 0.9);
+}
+.financial .container table {
+  border: 3px solid #974377;
+  background-color: white;
+}
+.financial .container table th {
+  background: #974377;
+  text-align: right;
+}
+.financial .container table td {
+  text-align: right;
+  color: #74054A;
+}
+.financial .container table .izq {
+  text-align: left;
+}
+
+.laso {
+  margin-bottom: 0;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../assets/liverpool-store-1.jpg");
+}
+.laso .laso-holder {
+  height: 95%;
+  width: 95%;
+  margin: 0 2.5%;
+  background-color: rgba(154, 74, 124, 0.9);
+}
+.laso .laso-holder .laso-content {
+  color: white;
+  font-size: 1.1em;
+}
+.laso .laso-holder .laso-content > * {
+  padding: 2em;
+}
+
+.presence {
+  background-image: url("../../assets/liverpool-store-6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.presence .map-holder {
+  background-color: rgba(154, 74, 124, 0.9);
+}
+.presence .map-holder ul {
+  padding: 0;
+}
+.presence .map-holder ul li {
+  display: inline-block;
+  padding: 0.2em 1em;
+  transition: border 0.1s;
+}
+.presence .map-holder ul li:hover {
+  border-bottom: 1px solid orange;
+}
+.presence .map-holder ul li.active-map {
+  border-bottom: 1px solid orange;
+  display: inline-block;
+}
+.presence .map-holder ul a {
+  color: white;
+}
+.presence .map-header {
+  padding: 1em;
+}
+.presence .map-content {
+  margin: 5% 0;
+}
+.presence .map-content .map-div {
+  display: none;
+}
+.presence .map-content .map-div img.map {
+  width: 90%;
+  height: 90%;
+}
+
+.legal {
+  background-image: url("../../assets/legal.jpg");
+}
+.legal .legal-holder {
+  width: 70%;
+  margin: 0 15%;
+  background-color: rgba(154, 74, 124, 0.9);
+}
+.legal .legal-holder .legal-content {
+  margin: 0 5%;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  padding-bottom: 2em;
+}
+.legal .legal-holder .legal-content p {
+  font-weight: lighter;
+}
+.legal .legal-holder .legal-content ul li:hover {
+  text-decoration: none;
+  color: white;
+  border: 0;
+}
+
+.active-legal {
+  font-weight: bold;
+  color: black;
+}
+
+footer {
+  margin: 1%;
+  font-size: 0.9em;
+}
+footer ul {
+  padding: 0;
+}
+footer a:hover {
+  text-decoration: none;
+  border: 0;
+}

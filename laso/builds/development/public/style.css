@@ -1,0 +1,18 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding: 0;
+    margin: 0;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(204, 205, 206,.5);
+}
+
+header .top-nav .logo-liverpool img{
+    width: 20%;
+    height: 5%;
+}
