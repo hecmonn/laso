@@ -125,5 +125,12 @@ function orders_existence_mx($table_name="pis_mx", $po_id){
 	}
 	return $ids;
 }
-
+function validate_existence(){
+	$sql = "SELECT * FROM comp_ent";
+	$res = exec_query($sql);
+	while($row = mysqli_fetch_assoc($res)){
+		$ids[] = $row["id"];
+	}
+return $ids;
+}
 ?>

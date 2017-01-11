@@ -1,7 +1,7 @@
 <?php
 
-set_include_path('C:\xampp\htdocs\laso\_includes');
-ini_set('include_path','init.php');
+//working path on pc_main
+require_once("/xampp\htdocs\laso\_includes\init.php");
 
 if(isset($_POST["submit"])){
 	$user = $_POST["username"];

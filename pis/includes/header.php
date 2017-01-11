@@ -1,5 +1,9 @@
 <?php //AUTHOR: HECTOR MONARREZ ARAUJO
-require_once("/Applications/XAMPP/htdocs/laso/_includes/init.php");
+
+
+//require_once("/Applications/XAMPP/htdocs/laso/_includes/init.php");
+//pc_main path
+require_once("/xampp\htdocs\laso\_includes\init.php");
 require_once("User.php");
 
 if(!isset($_SESSION["id_pis"])){

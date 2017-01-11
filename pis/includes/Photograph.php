@@ -1,8 +1,7 @@
 <?php //AUTHOR: HECTOR E. MONARREZ ARAUJO
-require_once("Database.php");
 defined('DS') ? null : define('DS', '/');
 defined('SITE_ROOT') ? null : define('SITE_ROOT','/home1/lasovpco/public_html');
-class Photograph extends DbObjects{
+class Photograph{
 	protected static $db_fields = ['id', 'filename', 'type', 'size'];
 	protected $table_name = "photos";
 	public $id;
@@ -76,7 +75,7 @@ class Photograph extends DbObjects{
 			//change somethingmore for date
 			$this->filename = "somethingmore" .$this->filename ;
 			$target_path = SITE_ROOT .DS. $this->directory .DS. $supp_name . DS . $this->filename;
-			
+
 		}
 		if(move_uploaded_file($this->temp_path, $target_path)){
 			global $Database;

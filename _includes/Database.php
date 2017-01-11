@@ -21,7 +21,7 @@ class Database{
 		defined('DB_SERVER') ? null : define("DB_SERVER","localhost");
 		defined('DB_USER') ? null : define("DB_USER","root");
 		defined('DB_PASS') ? null: define("DB_PASS","admin");
-		defined('DB') ? null: define("DB", "pis_development");
+		defined('DB') ? null: define("DB", "laso_development");
 		$this->con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB);
 		if (mysqli_errno($this->con)){
 				die("Database connection failed: ".

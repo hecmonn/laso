@@ -1,5 +1,7 @@
 <?php //AUTHOR: HECTOR E. MONARREZ ARAUJO
-require_once("/Applications/XAMPP/htdocs/laso/_includes/init.php");
+
+//require_once("/Applications/XAMPP/htdocs/laso/_includes/init.php");
+require_once("/xampp\htdocs\laso\_includes\init.php");
 class User {
 	public $user_id;
 	public $user_username;
